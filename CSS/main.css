@@ -1,0 +1,87 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+
+body{
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Poiret One', cursive;
+  letter-spacing: 0.2em;
+  color: black;
+  text-align: center;
+  font-size: 40px;
+  padding: 10px;
+}
+
+h2, h3 {
+    font-size: 20px;
+    font-family: Montserrat, sans-serif;
+    margin: 20px;
+}
+
+
+
+.left {
+    width: 45%;
+    height: 700px;
+    float: left;
+    padding: 20px;
+}
+
+
+.right {
+    background-image: url("http://res.cloudinary.com/rany/image/upload/e_grayscale/v1462082611/back_fn3x3j.png");
+    background-size: cover;
+    width: 48%;
+    height: 700px;
+    float: left;
+    margin-right: -30px;
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+
+.somosRieShow{
+  display: none;
+}
+
+.aboutMeText h3{
+  color: white;
+  font-family: 'Poiret One', cursive;
+  letter-spacing: 0.2em;
+  text-align: center;
+  font-size: 25px;
+  padding: 10px;
+}
+
+.social-media:hover{
+  background-color: pink;
+  border-radius: 50%;
+}
+
+#github {
+    width: 50px;
+    border-radius: 50%;
+}
+
+#email {
+    width: 62px;
+}
+
+.skillsText li {
+    display: inline;
+    font-size: 7rem;
+    color: white;
+    list-style-type: none;
+    margin-right: 0.5em;
+}
+
+.skillsText{
+  display: none
+}
+
+.button {
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 0.5em;
+}
