@@ -20,18 +20,26 @@ h2, h3 {
     margin: 20px;
 }
 
+a{
+  text-decoration: none;
+}
+
+.container{
+  margin-right: -4.5%;
+}
 
 
 .left {
     width: 45%;
-    height: 700px;
+    height: 100%;
     float: left;
-    padding: 20px;
+    /*padding: 20px;*/
+    margin-top: -10px;
 }
 
 
 .right {
-    background-image: url("http://res.cloudinary.com/rany/image/upload/e_grayscale/v1462082611/back_fn3x3j.png");
+    background-image: url("http://res.cloudinary.com/rany/image/upload/v1462285879/option5_zzg5iu.jpg");
     background-size: cover;
     width: 48%;
     height: 700px;
@@ -39,11 +47,17 @@ h2, h3 {
     margin-right: -30px;
     background-repeat: no-repeat;
     padding: 20px;
+    margin-top: -10px;
+    margin-right: -10px;
 }
 
-.somosRieShow{
+.somosRieShow, .aboutMeText{
   display: none;
 }
+
+/*.somosRieText p {
+  color: white;
+}*/
 
 .aboutMeText h3{
   color: white;
@@ -56,7 +70,7 @@ h2, h3 {
 
 .social-media:hover{
   background-color: pink;
-  border-radius: 50%;
+  border-radius: 40%;
 }
 
 #github {
@@ -77,11 +91,25 @@ h2, h3 {
 }
 
 .skillsText{
-  display: none
+  display: none;
 }
 
 .button {
     border: 1px solid black;
     padding: 5px;
     border-radius: 0.5em;
+}
+
+.sayHi{
+  margin-top: 30%;
+  border-top: 1px solid gainsboro;
+
+  /*position: fixed;*/
+}
+
+
+@media (max-width: 600px){
+  .left {
+    display: inline;
+  }
 }
