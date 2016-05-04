@@ -3,6 +3,11 @@
 
 body{
   text-align: center;
+  cursor: cell;
+}
+
+img {
+  max-width: 100%;
 }
 
 h1 {
@@ -15,40 +20,72 @@ h1 {
 }
 
 h2, h3 {
-    font-size: 20px;
-    font-family: Montserrat, sans-serif;
-    margin: 20px;
+  font-size: 20px;
+  font-family: Montserrat, sans-serif;
+  margin: 20px;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-.container{
-  margin-right: -4.5%;
+a:visited{
+  color: black;
+}
+
+a:hover {
+  color: #B9AEE0;
+}
+
+hr {
+  max-width: 80%;
+}
+
+.button {
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 0.5em;
+    margin: 10px;
+}
+
+
+.button:hover{
+  background-color: #B9AEE0;
+  color: white;
+  box-shadow: 2px 2px 5px black;
+  border: 1px solid gainsboro;
+}
+
+
+.container {
+  /*margin-right: -5%;*/
+  max-height: 640px;
+  overflow: hidden;
+  margin-top: -10px;
 }
 
 
 .left {
-    width: 45%;
-    height: 100%;
-    float: left;
-    /*padding: 20px;*/
-    margin-top: -10px;
+  width: 45%;
+  height: 100%;
+  float: left;
+  /*padding: 20px;*/
+  margin-top: -10px;
 }
 
 
 .right {
-    background-image: url("http://res.cloudinary.com/rany/image/upload/v1462285879/option5_zzg5iu.jpg");
-    background-size: cover;
-    width: 48%;
-    height: 700px;
-    float: left;
-    margin-right: -30px;
-    background-repeat: no-repeat;
-    padding: 20px;
-    margin-top: -10px;
-    margin-right: -10px;
+  background-image: url("http://res.cloudinary.com/rany/image/upload/v1462285879/option5_zzg5iu.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 48%;
+  height: 700px;
+  float: left;
+  margin-right: -30px;
+  background-repeat: no-repeat;
+  padding: 20px;
+  margin-top: -10px;
+  margin-right: -10px;
 }
 
 .somosRieShow, .aboutMeText{
@@ -64,12 +101,14 @@ a{
   font-family: 'Poiret One', cursive;
   letter-spacing: 0.2em;
   text-align: center;
-  font-size: 25px;
+  font-size: 23px;
   padding: 10px;
+  text-shadow: 2px 2px 5px black;
+  /*background-color: rgba(185, 173, 223, 0.75);*/
 }
 
 .social-media:hover{
-  background-color: pink;
+  background-color: #B9AEE0;
   border-radius: 40%;
 }
 
@@ -84,27 +123,44 @@ a{
 
 .skillsText li {
     display: inline;
-    font-size: 7rem;
-    color: white;
+    font-size: 6rem;
+    color: lavender;
     list-style-type: none;
     margin-right: 0.5em;
+    text-shadow: 2px 2px 5px black;
 }
 
-.skillsText{
+.skillsText, .projectsText{
   display: none;
 }
 
-.button {
-    border: 1px solid black;
-    padding: 5px;
-    border-radius: 0.5em;
+.somosRie, .cookrApp, .meninasTech{
+  display: inline-block;
 }
 
-.sayHi{
-  margin-top: 30%;
-  border-top: 1px solid gainsboro;
+.cookrAppText, .somosRieText{
+  overflow: scroll;
+  max-height: 500px;
+}
 
-  /*position: fixed;*/
+.projectsText h2{
+  cursor: pointer;
+}
+
+.projectsText h2:hover{
+  color: #B9AEE0;
+}
+
+
+
+.leftText{
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.leftText h2:hover{
+  color: #B9AEE0;
+  cursor: pointer;
 }
 
 
@@ -112,4 +168,14 @@ a{
   .left {
     display: inline;
   }
+}
+
+.previa{
+  margin-top: 30%;
+
+}
+
+.previa img{
+  max-width: 30%;
+  display: inline-block;
 }
