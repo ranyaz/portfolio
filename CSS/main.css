@@ -59,9 +59,8 @@ hr {
 
 
 .container {
-  /*margin-right: -5%;*/
-  max-height: 710px;
-  overflow: hidden;
+  margin-right: -5%;
+  margin-left: -2%;
   margin-top: -10px;
 }
 
@@ -78,8 +77,13 @@ hr {
 .leftText{
   margin-top: 3%;
   margin-bottom: 3%;
+
 }
 
+.leftText h2{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
 .leftText h2:hover{
   color: #B9AEE0;
   cursor: pointer;
@@ -97,6 +101,10 @@ hr {
 
 #email {
     width: 62px;
+}
+
+.sayHi h1{
+  margin-bottom: 10px;
 }
 
 
@@ -146,13 +154,13 @@ hr {
   display: inline-block;
 }
 
-.cookrAppText, .somosRieText{
+.cookrAppText, .somosRieText, .meninasTechText{
   overflow: scroll;
   max-height: 400px;
 }
 
 .projectsText{
-  margin-top: 120px;
+  margin-top: 15%;
 }
 
 .projectsText h2{
@@ -173,11 +181,71 @@ hr {
   margin-right: 25px;
 }
 
+.sayHi2{
+  display: none;
+}
 
+.allText img {
+  margin-top: -10%;
+  margin-bottom: -7%;
+}
 
-
-@media (max-width: 600px){
-  .left {
-    display: inline;
+@media screen and (max-width: 700px){
+  .leftText h2{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  display: inline-block;
   }
+
+  .left{
+  min-width: 100%;
+  }
+
+  .right{
+  /*display: none;*/
+  margin-top: 50px;
+  min-width: 100%;
+  }
+
+  .sayHi{
+  display: none;
+  }
+
+  .container {
+  /*background-image: url("http://res.cloudinary.com/rany/image/upload/v1462285879/option5_zzg5iu.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;*/
+  /*margin-right: -5%;*/
+  max-height: 710px;
+  overflow: scroll;
+  margin-top: -10px;
+  }
+
+  .projectsText{
+  margin-top: 0px;
+  }
+
+  .right {
+  /*background-image: url("http://res.cloudinary.com/rany/image/upload/v1462285879/option5_zzg5iu.jpg");
+  background-size: cover;
+  background-position: center;*/
+  width: 48%;
+  height: 500px;
+  float: left;
+  margin-right: -30px;
+  background-repeat: no-repeat;
+  padding: 20px;
+  margin-top: -10px;
+  margin-right: -10px;
+  }
+
+  .aboutMeText, .skillsText {
+  margin-top: 0%;
+  }
+
+  .sayHi2{
+  display: inline;
+  }
+
 }

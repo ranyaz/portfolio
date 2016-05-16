@@ -10,7 +10,7 @@ $(document).ready(function() {
 
 
 // Say HELLO
-  var text = ["Say Hello", "Manda um Oi", "Di Hola", "Dit Salut", "Saluta", "Namaste"];
+  var text = ["Say Hello", "Diga oi", "Di Hola", "Dit Salut", "Saluta", "Namaste"];
   var counter = 0;
   var elem = document.getElementById("textChange");
   setInterval(change, 2000);
@@ -20,9 +20,9 @@ $(document).ready(function() {
      if(counter >= text.length) { counter = 0; }
    }
 
-
 var backgroundImageBlur = "url(http://res.cloudinary.com/rany/image/upload/e_blur_region:654/v1462285879/option5_zzg5iu.jpg)";
 var backgroundImageNormal = "url(http://res.cloudinary.com/rany/image/upload/v1462285879/option5_zzg5iu.jpg";
+
 // About ME
   $('.aboutMe').on("mouseenter", function() {
     $('.resumeText').hide();
@@ -32,7 +32,7 @@ var backgroundImageNormal = "url(http://res.cloudinary.com/rany/image/upload/v14
     $('.aboutMeText').fadeIn('slow');
     $('.right').css({ backgroundImage: backgroundImageBlur});
   }).on("mouseleave", function() {
-    $('.aboutMeText').fadeOut('slow');
+    $('.aboutMeText').hide();
     $('.right').css("background-image", backgroundImageNormal ).fadeIn('slow');
   });
 
@@ -53,12 +53,13 @@ var backgroundImageNormal = "url(http://res.cloudinary.com/rany/image/upload/v14
     $('.cookrAppText').fadeIn('slow');
     });
 
-//Cook App
+//MeninasTech
   $('.meninasTech').on("click", function() {
     $('.somosRieText').hide();
     $('.cookrAppText').hide();
     $('.previa').hide();
     $('.meninasTechText').fadeIn('slow');
+
     });
 
 //Skills
