@@ -26,6 +26,12 @@ h2, h3 {
   margin: 20px;
 }
 
+h4{
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: justify;
+}
+
 a {
   text-decoration: none;
 }
@@ -80,11 +86,11 @@ hr {
 
 }
 
-.leftText h2{
+.leftText h3{
   margin-top: 40px;
   margin-bottom: 40px;
 }
-.leftText h2:hover{
+.leftText h3:hover{
   color: #B9AEE0;
   cursor: pointer;
 }
@@ -156,7 +162,7 @@ hr {
 
 .cookrAppText, .somosRieText, .meninasTechText{
   overflow: scroll;
-  max-height: 400px;
+  max-height: 450px;
 }
 
 .projectsText{
@@ -190,8 +196,13 @@ hr {
   margin-bottom: -7%;
 }
 
-@media screen and (max-width: 700px){
-  .leftText h2{
+.banner{
+  display: none;
+}
+
+
+@media screen and (max-width: 600px){
+  .leftText h3{
   margin-top: 0px;
   margin-bottom: 0px;
   display: inline-block;
@@ -212,11 +223,11 @@ hr {
   }
 
   .container {
-  /*background-image: url("http://res.cloudinary.com/rany/image/upload/v1462285879/option5_zzg5iu.jpg");
-  background-size: cover;
+/*  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;*/
   /*margin-right: -5%;*/
+  background-image: none;
   max-height: 710px;
   overflow: scroll;
   margin-top: -10px;
@@ -226,9 +237,11 @@ hr {
   margin-top: 0px;
   }
 
+
+
   .right {
-  /*background-image: url("http://res.cloudinary.com/rany/image/upload/v1462285879/option5_zzg5iu.jpg");
-  background-size: cover;
+  background-image: none;
+  /*background-size: cover;
   background-position: center;*/
   width: 48%;
   height: 500px;
@@ -244,8 +257,52 @@ hr {
   margin-top: 0%;
   }
 
+  .skillsText{
+    background-image: none;
+  }
+
   .sayHi2{
   display: inline;
   }
 
+}
+
+
+
+
+
+
+
+h2 {
+  position: relative;
+  color: #000;
+  text-decoration: none;
+}
+
+h2:hover {
+  color: #B9AEE0;
+}
+
+h2:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #B9AEE0;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+h2:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.projectsTextLinks{
+  display: inline-block;
 }

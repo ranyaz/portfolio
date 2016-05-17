@@ -64,6 +64,7 @@ var backgroundImageNormal = "url(http://res.cloudinary.com/rany/image/upload/v14
 
 //Skills
     $('.skills').on("mouseenter", function() {
+      $('.aboutMeText').hide();
       $('.resumeText').hide();
       $('.projectsText').hide();
       $('.previa').hide();
@@ -73,6 +74,7 @@ var backgroundImageNormal = "url(http://res.cloudinary.com/rany/image/upload/v14
 
 //Projects
   $('.projects').on('mouseenter', function(){
+    $('.aboutMeText').hide();
     $('.skillsText').hide();
     $('.somosRieText').hide();
     $('.cookrAppText').hide();
@@ -85,6 +87,7 @@ var backgroundImageNormal = "url(http://res.cloudinary.com/rany/image/upload/v14
 
 //Resume
 $('.resume').on('mouseenter', function(){
+  $('.aboutMeText').hide();
   $('.skillsText').hide();
   $('.previa').hide();
   $('.projectsText').hide();
@@ -96,7 +99,7 @@ $('.resume').on('mouseenter', function(){
 if( typeof console === 'object' ) {
     console.log(
         '\n' +
-        'Hey you! Thanks for visiting.\n' +
+        '%c ♥ Hey you! Thanks for visiting.\n' +
         'If you wanna know a bit more about me or my portfolio just say hi!\n' +
         '\n' +
         '    _      _      _\n' +
@@ -105,7 +108,7 @@ if( typeof console === 'object' ) {
         '\n' +
         'I’d love to hear what you think!\n' +
         '\n' +
-        '— Rany \n'
+        '— Rany \n' , 'color: #B9AEE0; font-size: medium'
     );
 }
 
