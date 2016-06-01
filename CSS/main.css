@@ -26,7 +26,7 @@ h1 {
   letter-spacing: 0.2em;
   color: black;
   text-align: center;
-  font-size: 40px;
+  font-size: 38px;
   padding: 10px;
   text-shadow: 1px 1px 10px gray;
 }
@@ -125,6 +125,9 @@ hr {
   margin-bottom: 10px;
 }
 
+.skillsText{
+  margin-top: 30%;
+}
 
 /* Right Side */
 .right {
@@ -139,10 +142,6 @@ hr {
   padding: 20px;
   margin-top: -10px;
   margin-right: -10px;
-}
-
-.aboutMeText, .skillsText{
-  margin-top: 20%;
 }
 
 .aboutMeText h3{
@@ -212,6 +211,70 @@ hr {
   display: none;
 }
 
+@media screen and (min-width:820px){
+  .aboutMeText h3 {
+      font-size: 30px;
+  }
+  .aboutMeText{
+    margin-top: 10%;
+  }
+}
+
+
+@media screen and (max-width:750px) and (max-height:450px){
+  h1{
+    font-size: 23px;
+    padding: 5px;
+  }
+
+  .leftText h3 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .right {
+    height: 400px;
+  }
+  #textChange, .sayHi{
+    margin-top: 0px;
+  }
+
+
+  .aboutMeText h3 {
+      font-size: 17px;
+  }
+
+  .socialmedia img{
+    width: 40px;
+  }
+
+  #github{
+      width: 35px;
+  }
+  #email {
+    width: 43px;
+  }
+
+  .projectsText {
+     margin-top: 0px;
+  }
+
+  .projectsText h2 {
+    font-size: 15px;
+    margin: 5px;
+  }
+  .cookrAppText, .somosRieText, .meninasTechText {
+    overflow: scroll;
+    max-height: 320px;
+  }
+
+  .skillsText li {
+    font-size: 3rem;
+  }
+  .skillsText{
+    margin-top: 30%;
+  }
+}
+
 /* Phone upright*/
 @media screen and (max-width:560px){
   .leftText h3{
@@ -224,10 +287,6 @@ hr {
 
   h1 {
     font-size: 30px;
-  }
-
-  .aboutMeText h3{
-    font-size: 17px;
   }
 
   .left{
@@ -254,8 +313,8 @@ hr {
   }
 
   .projectsText h2 {
-    font-size: 17px;
-    margin: 5px;
+    font-size: 15px;
+    margin: 3px;
   }
 
   .right {
@@ -269,7 +328,7 @@ hr {
   }
 
   .aboutMeText, .skillsText {
-    margin-top: 0%;
+    margin-top: 0px;
   }
 
   .skillsText{
@@ -291,7 +350,7 @@ hr {
   }
 
   .aboutMeText h3 {
-    font-size: 16px;
+    font-size: 18px;
     padding: 0px;
     text-align: center;
   }
@@ -299,6 +358,15 @@ hr {
   .resumeText img{
     max-height: 350px;
     margin-top: -20px;
+  }
+}
+
+@media screen and (max-width:560px) and (max-height:600px){
+
+  .aboutMeText h3 {
+    font-size: 14px;
+    padding: 0px;
+    text-align: center;
   }
 }
 
