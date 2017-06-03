@@ -26,8 +26,8 @@ $(document).ready(function() {
      if(counter >= text.length) { counter = 0; }
    }
 
-var backgroundImageBlur = "url(CSS/images/mainbur.jpg)";
-var backgroundImageNormal = "url(CSS/images/main.jpg)";
+var backgroundImageBlur = "url(http://res.cloudinary.com/rany/image/upload/e_blur_region:654/v1462285879/option5_zzg5iu.jpg)";
+var backgroundImageNormal = "url(http://res.cloudinary.com/rany/image/upload/v1462285879/option5_zzg5iu.jpg";
 
 // About ME
   $('.aboutMe').on("mouseenter", function() {
