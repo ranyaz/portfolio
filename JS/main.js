@@ -29,76 +29,22 @@ $(document).ready(function() {
 var backgroundImageBlur = "url(CSS/images/mainbur.jpg)";
 var backgroundImageNormal = "url(CSS/images/main.jpg)";
 
-// About ME
-  $('.aboutMe').on("mouseenter", function() {
-    $('.resumeText').hide();
-    $('.skillsText').hide();
-    $('.projectsText').hide();
-    $('.previa').hide();
-    $('.aboutMeText').fadeIn('slow');
-    $('.right').css({ backgroundImage: backgroundImageBlur});
-  }).on("mouseleave", function() {
-    $('.aboutMeText').hide();
-    $('.right').css("background-image", backgroundImageNormal ).fadeIn('slow');
+
+$(document).ready(function(){
+    $(".rightText").each(function(){
+       $(this).addClass('hidden');
   });
 
-
-//Somos Rie
-  $('.somosRie').on("click", function() {
-    $('.cookrAppText').hide();
-    $('.meninasTechText').hide();
-    $('.previa').hide();
-    $('.somosRieText').fadeIn('slow');
-    });
-
-//Cook App
-  $('.cookrApp').on("click", function() {
-    $('.somosRieText').hide();
-    $('.meninasTechText').hide();
-    $('.previa').hide();
-    $('.cookrAppText').fadeIn('slow');
-    });
-
-//MeninasTech
-  $('.meninasTech').on("click", function() {
-    $('.somosRieText').hide();
-    $('.cookrAppText').hide();
-    $('.previa').hide();
-    $('.meninasTechText').fadeIn('slow');
-
-    });
-
-//Skills
-    $('.skills').on("mouseenter", function() {
-      $('.aboutMeText').hide();
-      $('.resumeText').hide();
-      $('.projectsText').hide();
-      $('.previa').hide();
-      $('.right').css({ backgroundImage: backgroundImageBlur});
-      $('.skillsText').fadeIn("slow");
-    });
-
-//Projects
-  $('.projects').on('mouseenter', function(){
-    $('.aboutMeText').hide();
-    $('.skillsText').hide();
-    $('.somosRieText').hide();
-    $('.cookrAppText').hide();
-    $('.meninasTechText').hide();
-    $('.resumeText').hide();
-    $('.previa').show();
-    $('.projectsText').show();
-    $('.right').css( "background-image", "none");
+  $('.leftText-links').on( "click", function(e) {
+      e.preventDefault();
+      var id = $(this).attr('data-type');
+      $(".rightText").each(function(){
+          $(this).addClass('hidden');
+          if($(this).attr('id') == id) {
+              $(this).removeClass('hidden');
+          }
+      });
   });
-
-//Resume
-$('.resume').on('mouseenter', function(){
-  $('.aboutMeText').hide();
-  $('.skillsText').hide();
-  $('.previa').hide();
-  $('.projectsText').hide();
-  $('.right').css( "background-image", "none");
-  $('.resumeText').show();
 });
 
 // Message Console
