@@ -36,14 +36,19 @@ $(document).ready(function(){
   });
 
   $('.left-text-links').on( "click", function(e) {
-      e.preventDefault();
       var id = $(this).attr('data-type');
-      $(".rightText").each(function(){
-          $(this).addClass('hidden');
-          if($(this).attr('id') == id) {
-              $(this).removeClass('hidden');
-          }
-      });
+      if (id === 'resume'){
+        return;
+      }else{
+              e.preventDefault();
+
+        $(".rightText").each(function(){
+            $(this).addClass('hidden');
+            if($(this).attr('id') == id) {
+                $(this).removeClass('hidden');
+            }
+        });
+      }
   });
 });
 
