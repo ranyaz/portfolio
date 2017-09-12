@@ -45,6 +45,7 @@ h4 {
 a {
   color: black;
   text-decoration: none;
+  transition: .3s ease-out;
 }
 a:visited {
   color: black;
@@ -52,9 +53,11 @@ a:visited {
 a:hover {
   color: #B9AEE0;
 }
+
 .hidden {
-  display: none;
+  opacity: 0;
 }
+
 hr {
   max-width: 80%;
 }
@@ -70,10 +73,13 @@ hr {
   box-shadow: 2px 2px 5px black;
   border: 1px solid gainsboro;
 }
-.container {
-  margin-right: -5%;
-  margin-left: -2%;
-  margin-top: -10px;
+
+@media screen and (min-width:769px) {
+  .container {
+    margin-right: -5%;
+    margin-left: -2%;
+    margin-top: -10px;
+  }
 }
 
 /* Left Side */
@@ -129,12 +135,20 @@ hr {
   height: 100vh;
 }
 .aboutMeText p {
-  color: white;
+  color: #e4e4e4;
   font-family: 'Montserrat', cursive;
   letter-spacing: 0.05em;
   text-align: center;
-  font-size: 30px;
-  padding: 10px;
+  font-size: 23px;
+  padding: 30px 50px;
+}
+.aboutMeText-inner {
+    background-color: rgba(56, 56, 56, 0.74);
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    width: 80%;
 }
 @media screen and (max-width:560px) and (max-height:600px) {
   .aboutMeText p {
@@ -180,14 +194,6 @@ hr {
 
 /* About Me text Size - Computer*/
 
-@media screen and (min-width:820px) {
-  .aboutMeText p {
-    font-size: 30px;
-  }
-  .aboutMeText p {
-    margin: 15% 5%;
-  }
-}
 .rightText {
   position: absolute;
   background: rgba(0, 0, 0, 0.8);
@@ -195,6 +201,7 @@ hr {
   right: 0;
   top: 0;
   bottom: 0;
+  transition: .3s ease-out;
 }
 /* Landscape Mobile */
 
@@ -267,7 +274,7 @@ hr {
   }
   .right {
     background-image: url(images/main.jpg);
-    height: 47vh;
+    height: 65vh;
     float: left;
     background-repeat: no-repeat;
     padding: 0;
@@ -301,7 +308,16 @@ hr {
   }
   .aboutMeText p{
     font-size: 17px;
-    padding: 30px;
+    padding: 0px;
+  }
+}
+
+@media screen and (max-width:414px) {
+  .left-text-links{
+      padding: 0 10px;
+  }
+  .right {
+    height: 48vh;
   }
 }
 
