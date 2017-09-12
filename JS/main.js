@@ -16,7 +16,7 @@ $(document).ready(function() {
 
 
 // Say HELLO
-  var text = ["Diga oi", "Di Hola", "Dit Salut", "Saluta", "Namaste", "Say Hello"];
+  var text = ["Manda um oi", "Di Hola", "Dit Salut", "Saluta", "Namaste", "Say Hello"];
   var counter = 0;
   var elem = document.getElementById("textChange");
   setInterval(change, 2000);
