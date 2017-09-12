@@ -26,22 +26,34 @@ $(document).ready(function() {
      if(counter >= text.length) { counter = 0; }
    }
 
+// Body
+
 var backgroundImageBlur = "url(CSS/images/mainbur.jpg)";
 var backgroundImageNormal = "url(CSS/images/main.jpg)";
 
 
-$(document).ready(function(){
-    $(".rightText").each(function(){
+
+  $(".rightText").each(function(){
        $(this).addClass('hidden');
   });
 
+  $('h1').on('click', function(){
+        $('.left-text-links').removeClass('active');
+        $(".rightText").addClass('hidden')
+  })
+
   $('.left-text-links').on( "click", function(e) {
+
       var id = $(this).attr('data-type');
+      $('.left-text-links').removeClass('active');
+      $(this).addClass('active');
+
       if (id === 'resume'){
+        $('.left-text-links').removeClass('active');
+        $(".rightText").addClass('hidden')
         return;
       }else{
-              e.preventDefault();
-
+        e.preventDefault();
         $(".rightText").each(function(){
             $(this).addClass('hidden');
             if($(this).attr('id') == id) {
@@ -50,7 +62,6 @@ $(document).ready(function(){
         });
       }
   });
-});
 
 // Message Console
 if( typeof console === 'object' ) {
