@@ -35,7 +35,7 @@ $(document).ready(function(){
        $(this).addClass('hidden');
   });
 
-  $('.leftText-links').on( "click", function(e) {
+  $('.left-text-links').on( "click", function(e) {
       e.preventDefault();
       var id = $(this).attr('data-type');
       $(".rightText").each(function(){
