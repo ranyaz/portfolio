@@ -14,21 +14,6 @@ $(document).ready(function() {
         });
     });
 
-
-    // Say HELLO
-    var text = ["Manda um oi", "Di Hola", "Dit Salut", "Saluta", "Namaste", "Say Hello"];
-    var counter = 0;
-    var elem = document.getElementById("textChange");
-    setInterval(change, 2000);
-
-    function change() {
-        elem.innerHTML = "<h1>" + text[counter] + "</h1>";
-        counter++;
-        if (counter >= text.length) {
-            counter = 0;
-        }
-    }
-
     // Body
 
     var backgroundImageBlur = "url(CSS/images/mainbur.jpg)";
@@ -72,11 +57,6 @@ $(document).ready(function() {
             '\n' +
             '%c ♥ Hey you! Thanks for visiting.\n' +
             'If you wanna know a bit more about me or my portfolio just say hi!\n' +
-            '\n' +
-            '    _      _      _\n' +
-            '  >(.)__ <(.)__ =(.)__\n' +
-            '   (___/  (___/  (___/\n' +
-            '\n' +
             'I’d love to hear what you think!\n' +
             '\n' +
             '— Rany \n', 'color: #B9AEE0; font-size: medium'
