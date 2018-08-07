@@ -32,15 +32,18 @@ h1 {
   font-size: 38px;
   padding: 10px;
 }
-h2, h3 {
+h2, h3, h5 {
   font-size: 20px;
   font-family: 'Montserrat', sans-serif;
   margin: 20px;
 }
-h4 {
+h4{
   padding-left: 30px;
   padding-right: 30px;
   text-align: justify;
+}
+h5 {
+  color: white;
 }
 a {
   color: black;
