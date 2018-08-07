@@ -172,7 +172,7 @@ hr {
   }
 }
 .skillsText{
-	padding: 50px;
+  padding: 50px;
 }
 .skillsText li {
   display: inline;
@@ -180,7 +180,7 @@ hr {
   color: white;
   list-style-type: none;
   margin: 0 20px;
-	line-height: 6rem;
+  line-height: 6rem;
 }
 .left-contact2 {
   display: none;
@@ -228,6 +228,35 @@ hr {
   margin-bottom: 40px;
 }
 
+.projectsText-inner-link{
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 30px;
+  display: block;
+  text-align: center;
+  position: relative;
+  padding-bottom: 40px;
+
+}
+
+.projectsText-inner-link span{
+  color: #fff;
+  position: absolute;
+  transition: .3s ease-out;
+  width: 100%;
+  left: 0;
+  margin-top: 10px;
+}
+.projectsText-inner-link img{
+  transition: .3s ease-out;
+  max-width: 120px;
+}
+
+.projectsText-inner-link:hover span{
+  color: #B9AEE0;
+}
+.projectsText-inner-link:hover img{
+  transform: scale(1.03);
+}
 /* About Me text Size - Computer*/
 
 .rightText {
@@ -353,4 +382,8 @@ hr {
 
 .projectsTextLinks {
   display: inline-block;
+}
+
+.rounded {
+  border-radius: 50%;
 }
