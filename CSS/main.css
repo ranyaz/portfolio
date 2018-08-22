@@ -1,29 +1,16 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 @import url(https://fonts.googleapis.com/css?family=Poiret+One);
-.no-js #loader {
-  display: none;
-}
-.js #loader {
-  display: block;
-  position: absolute;
-  left: 100px;
-  top: 0;
-}
-.se-pre-con {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  z-index: 9999;
-  background: url(images/box.gif) center no-repeat #fff;
-}
+
 body.home {
   text-align: center;
   height: 100vh;
   overflow: hidden;
 }
+
 img {
   max-width: 100%;
 }
+
 h1 {
   font-family: 'Poiret One', cursive;
   letter-spacing: 0.2em;
@@ -32,27 +19,29 @@ h1 {
   font-size: 38px;
   padding: 10px;
 }
+
 h2, h3, h5 {
   font-size: 20px;
   font-family: 'Montserrat', sans-serif;
   margin: 20px;
 }
-h4{
+
+h4 {
   padding-left: 30px;
   padding-right: 30px;
   text-align: justify;
 }
-h5 {
-  color: white;
-}
+
 a {
   color: black;
   text-decoration: none;
   transition: .3s ease-out;
 }
+
 a:visited {
   color: black;
 }
+
 a:hover,
 a.active {
   color: #B9AEE0;
@@ -66,12 +55,14 @@ a.active {
 hr {
   max-width: 80%;
 }
+
 .button {
   border: 1px solid black;
   padding: 5px;
   border-radius: 0.5em;
   margin: 10px;
 }
+
 .button:hover {
   background-color: #B9AEE0;
   color: white;
@@ -104,29 +95,31 @@ hr {
 .left-text-links:hover {
   color: #B9AEE0;
   cursor: pointer;
+  transform: scale(1.1);
 }
-.social-media:hover {
-  background-color: #B9AEE0;
-  border-radius: 40%;
-}
-#github {
-  width: 50px;
-  border-radius: 50%;
-}
-#email {
-  width: 61px;
-  margin-bottom: -3px;
-}
+
 .left-contact h1 {
   margin-bottom: 10px;
 }
-.socialmedia a{
+.social-link{
   margin: 0 10px;
+  height: 60px;
+  display: inline-block;
 }
+
+.social-link .social-link-img{
+  width: 50px;
+  transition: .3s ease-out;
+}
+
+.social-link:hover .social-link-img {
+  transform: scale(1.1);
+}
+
 /* Right Side */
 
 .right {
-  background-image: url(images/main.jpg);
+  background-image: url(images/ranyazevedo-main.jpg);
   background-size: cover;
   background-position: center;
   width: 48%;
@@ -196,7 +189,7 @@ hr {
   display: none;
 }
 .resumeText {
-  background-image: url('CSS/images/resume.jpg') !important;
+  background-image: url('CSS/images/ranyazevedo-resume.jpg') !important;
   background-size: contain !important;
   height: 100%;
   background-repeat: no-repeat;
@@ -223,8 +216,7 @@ hr {
 }
 
 .projectsText-inner-img{
-    margin: 0 auto;
-    display: block;
+    float: left;
 }
 
 .projectsText-inner-work{
@@ -233,33 +225,42 @@ hr {
 
 .projectsText-inner-link{
   font-family: 'Montserrat', sans-serif;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   display: block;
-  text-align: center;
+  text-align: left;
   position: relative;
-  padding-bottom: 40px;
+  height: 120px;
 
 }
 
-.projectsText-inner-link span{
+.projectsText-inner-link .projectsText-inner-description {
   color: #fff;
-  position: absolute;
-  transition: .3s ease-out;
-  width: 100%;
-  left: 0;
-  margin-top: 10px;
+  vertical-align: -webkit-baseline-middle;
 }
+
+.projectsText-inner-link .projectsText-inner-title {
+  transition: .3s ease-out;
+}
+
 .projectsText-inner-link img{
   transition: .3s ease-out;
   max-width: 120px;
+  margin-right: 15px;
 }
 
-.projectsText-inner-link:hover span{
+.projectsText-inner-link:hover .projectsText-inner-tittle{
   color: #B9AEE0;
 }
 .projectsText-inner-link:hover img{
   transform: scale(1.03);
 }
+
+.experienceText-inner-img{
+    display: block;
+    margin: 0 auto;
+}
+
+
 /* About Me text Size - Computer*/
 
 .rightText {
@@ -291,14 +292,8 @@ hr {
   .aboutMeText h3 {
     font-size: 17px;
   }
-  .socialmedia img {
+  .social img {
     width: 40px;
-  }
-  #github {
-    width: 35px;
-  }
-  #email {
-    width: 43px;
   }
   .skillsText li {
     font-size: 3rem;
@@ -334,7 +329,7 @@ hr {
     margin-top: -10px;
   }
   .right {
-    background-image: url(images/main.jpg);
+    background-image: url(images/ranyazevedo-main.jpg);
     height: 65vh;
     float: left;
     background-repeat: no-repeat;
@@ -370,6 +365,13 @@ hr {
   .aboutMeText p{
     font-size: 17px;
     padding: 0px;
+  }
+  .projectsText,
+  .projectsText li {
+    font-size: 12px;
+  }
+  .projectsText-inner-link img{
+    max-width: 80px;
   }
 }
 

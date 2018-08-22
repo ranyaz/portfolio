@@ -1,23 +1,10 @@
-// Wait for window load
-$(window).load(function() {
-    // Animate loader off screen
-    $(".se-pre-con").fadeOut("slow");
-});
-
 $(document).ready(function() {
 
-    //Social Media Spin
-    $('.social-media').on('mouseover', function() {
-        var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-        $(this).addClass('animated rotateIn').one(animationEnd, function() {
-            $(this).removeClass('animated ' + 'rotateIn');
-        });
-    });
 
     // Body
 
-    var backgroundImageBlur = "url(CSS/images/mainbur.jpg)";
-    var backgroundImageNormal = "url(CSS/images/main.jpg)";
+    var backgroundImageBlur = "url(CSS/images/ranyazevedo-mainbur.jpg)";
+    var backgroundImageNormal = "url(CSS/images/ranyazevedo-main.jpg)";
 
 
 
